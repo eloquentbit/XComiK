@@ -9,7 +9,7 @@
 import Foundation
 
 class APIManager {
-    func loadComic(urlString: String, completion: Comic -> Void) {
+    func loadData(urlString: String, completion: Comic -> Void) {
         
         let config = NSURLSessionConfiguration.ephemeralSessionConfiguration()
         let session = NSURLSession(configuration: config)
