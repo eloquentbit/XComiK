@@ -34,9 +34,13 @@ class CurrentViewController: UIViewController {
     
     func didLoadData(comic: Comic) {
         self.navigationItem.title = comic.cTitle
+        
         comicDateLabel.text = comic.displayDate()
         comicNumLabel.text = "#\(comic.cNum)"
         comicAltLabel.text = comic.cAltText
+        
+        //comicImageView.frame.width
+
         
         if comic.vImageData != nil {
             print("Get data from array...")
@@ -45,6 +49,8 @@ class CurrentViewController: UIViewController {
             print("Get images in background thread")
             GetVideoImage(comic, imageView: comicImageView)
         }
+        
+        saveLastComicNum(comic.cNum)
         
     }
     
@@ -65,6 +71,11 @@ class CurrentViewController: UIViewController {
             }
         }
         
+    }
+    
+    // This function save the last comic number into NSUserDefaults
+    private func saveLastComicNum(num: Int) {
+        NSUserDefaults.standardUserDefaults().setInteger(num, forKey: "lastComicNum")
     }
 
 }
