@@ -39,9 +39,6 @@ class CurrentViewController: UIViewController {
         comicNumLabel.text = "#\(comic.cNum)"
         comicAltLabel.text = comic.cAltText
         
-        //comicImageView.frame.width
-
-        
         if comic.vImageData != nil {
             print("Get data from array...")
             comicImageView.image = UIImage(data: comic.vImageData!)
@@ -73,7 +70,7 @@ class CurrentViewController: UIViewController {
         
     }
     
-    // This function save the last comic number into NSUserDefaults
+    // This function saves the last comic number into NSUserDefaults
     private func saveLastComicNum(num: Int) {
         NSUserDefaults.standardUserDefaults().setInteger(num, forKey: "lastComicNum")
     }
