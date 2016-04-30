@@ -49,6 +49,7 @@ class ArchiveTableViewController: UITableViewController {
     
     private struct storyboard {
         static let cellReuseIdentifier = "archiveCell"
+        static let segueIdentifier = "comicDetail"
     }
 
     // MARK: - Table view data source
@@ -68,6 +69,10 @@ class ArchiveTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier(storyboard.cellReuseIdentifier, forIndexPath: indexPath) as! ArchiveTableViewCell
         
         cell.comic = comics[indexPath.row]
+        
+//        let bgColorView = UIView()
+//        bgColorView.backgroundColor = UIColor.redColor()
+//        cell.selectedBackgroundView = bgColorView
 
         return cell
     }
@@ -115,14 +120,17 @@ class ArchiveTableViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == storyboard.segueIdentifier {
+            if let indexpath = tableView.indexPathForSelectedRow {
+                let comic = comics[indexpath.row]
+                let dvc = segue.destinationViewController as! ComicDetailVC
+                dvc.comic = comic
+            }
+        }
     }
-    */
 
 }

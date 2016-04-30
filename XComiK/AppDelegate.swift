@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIApplication.sharedApplication().statusBarStyle = .LightContent
         UITabBar.appearance().tintColor = UIColor(red: 255.0/255.0, green: 86.0/255.0, blue: 79.0/255.0, alpha: 1.0)
         
-        let customFont = UIFont(name: "Avenir-Book", size: 16.0)
+        let customFont = UIFont(name: "Avenir-Roman", size: 16.0)
         UIBarButtonItem.appearance().setTitleTextAttributes([NSFontAttributeName: customFont!], forState: UIControlState.Normal)
         
         //print(UIFont.fontNamesForFamilyName("Avenir"))
