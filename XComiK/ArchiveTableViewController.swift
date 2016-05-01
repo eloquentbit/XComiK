@@ -20,7 +20,8 @@ class ArchiveTableViewController: UITableViewController {
         
         loadArchive(lastComicNum)
         
-        self.navigationItem.title = "Archive"
+        navigationItem.title = "Archive"
+        tableView.separatorStyle = .None
 
     }
     
@@ -43,6 +44,7 @@ class ArchiveTableViewController: UITableViewController {
         
         if comics.count == 100 {
             comics.sortInPlace { $0.cNum > $1.cNum }
+            tableView.separatorStyle = .SingleLine
             tableView.reloadData()
         }
     }
@@ -69,10 +71,6 @@ class ArchiveTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier(storyboard.cellReuseIdentifier, forIndexPath: indexPath) as! ArchiveTableViewCell
         
         cell.comic = comics[indexPath.row]
-        
-//        let bgColorView = UIView()
-//        bgColorView.backgroundColor = UIColor.redColor()
-//        cell.selectedBackgroundView = bgColorView
 
         return cell
     }
@@ -80,6 +78,7 @@ class ArchiveTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         
         cell.alpha = 0
+        
         UIView.animateWithDuration(1) { () -> Void in
             cell.alpha = 1
         }
