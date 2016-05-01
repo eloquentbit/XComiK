@@ -22,6 +22,7 @@ class ArchiveTableViewController: UITableViewController {
         
         navigationItem.title = "Archive"
         tableView.separatorStyle = .None
+        LoadingIndicatorView.show(self.view, loadingText: "Loading comics...")
 
     }
     
@@ -45,6 +46,7 @@ class ArchiveTableViewController: UITableViewController {
         if comics.count == 100 {
             comics.sortInPlace { $0.cNum > $1.cNum }
             tableView.separatorStyle = .SingleLine
+            LoadingIndicatorView.hide()
             tableView.reloadData()
         }
     }

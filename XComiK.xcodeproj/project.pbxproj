@@ -11,6 +11,7 @@
 		8116C0051CCD1FE9002EED84 /* ArchiveTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8116C0041CCD1FE9002EED84 /* ArchiveTableViewController.swift */; };
 		8116C0071CCD2022002EED84 /* ArchiveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8116C0061CCD2022002EED84 /* ArchiveTableViewCell.swift */; };
 		811E6FC91CD4D95500C00A18 /* ComicDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811E6FC81CD4D95500C00A18 /* ComicDetailVC.swift */; };
+		818A85631CD5DB7C00B25892 /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818A85621CD5DB7C00B25892 /* LoadingIndicatorView.swift */; };
 		81F30C091CCCAC650003741C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F30C081CCCAC650003741C /* AppDelegate.swift */; };
 		81F30C0E1CCCAC650003741C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F30C0C1CCCAC650003741C /* Main.storyboard */; };
 		81F30C101CCCAC650003741C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81F30C0F1CCCAC650003741C /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		8116C0041CCD1FE9002EED84 /* ArchiveTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchiveTableViewController.swift; sourceTree = "<group>"; };
 		8116C0061CCD2022002EED84 /* ArchiveTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchiveTableViewCell.swift; sourceTree = "<group>"; };
 		811E6FC81CD4D95500C00A18 /* ComicDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicDetailVC.swift; sourceTree = "<group>"; };
+		818A85621CD5DB7C00B25892 /* LoadingIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorView.swift; sourceTree = "<group>"; };
 		81F30C051CCCAC650003741C /* XComiK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XComiK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F30C081CCCAC650003741C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81F30C0D1CCCAC650003741C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		81F30C1A1CCCAD850003741C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				818A85621CD5DB7C00B25892 /* LoadingIndicatorView.swift */,
 				81F30C231CCCB5360003741C /* Constants.swift */,
 			);
 			name = Utils;
@@ -197,6 +200,7 @@
 				8116C0051CCD1FE9002EED84 /* ArchiveTableViewController.swift in Sources */,
 				8116C0071CCD2022002EED84 /* ArchiveTableViewCell.swift in Sources */,
 				8116C0031CCD1C39002EED84 /* CurrentViewController.swift in Sources */,
+				818A85631CD5DB7C00B25892 /* LoadingIndicatorView.swift in Sources */,
 				81F30C281CCCB69F0003741C /* APIManager.swift in Sources */,
 				81F30C091CCCAC650003741C /* AppDelegate.swift in Sources */,
 				811E6FC91CD4D95500C00A18 /* ComicDetailVC.swift in Sources */,
