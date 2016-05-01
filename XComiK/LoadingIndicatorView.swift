@@ -39,13 +39,14 @@ class LoadingIndicatorView {
         let overlay = UIView(frame: overlayTarget.frame)
         overlay.center = overlayTarget.center
         overlay.alpha = 0
-        overlay.backgroundColor = UIColor.blackColor()
+        overlay.backgroundColor = UIColor.whiteColor()
         overlayTarget.addSubview(overlay)
         overlayTarget.bringSubviewToFront(overlay)
         
         // Create and animate the activity indicator
-        let indicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.White)
-        indicator.center = overlay.center
+        let indicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.WhiteLarge)
+        indicator.color = UIColor.blackColor()
+        indicator.center = overlayTarget.center
         indicator.startAnimating()
         overlay.addSubview(indicator)
         
@@ -54,7 +55,7 @@ class LoadingIndicatorView {
             let label = UILabel()
             label.text = textString
             label.font = UIFont(name: "Avenir-Heavy", size: 16.0)
-            label.textColor = UIColor.whiteColor()
+            label.textColor = UIColor.blackColor()
             label.sizeToFit()
             label.center = CGPoint(x: indicator.center.x, y: indicator.center.y + 30)
             overlay.addSubview(label)
