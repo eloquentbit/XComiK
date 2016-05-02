@@ -10,6 +10,8 @@ import UIKit
 
 class CurrentViewController: UIViewController {
 
+    private var comic: Comic?
+    
     @IBOutlet weak var comicDateLabel: UILabel!
     @IBOutlet weak var comicNumLabel: UILabel!
     @IBOutlet weak var comicImageView: UIImageView!
@@ -20,7 +22,17 @@ class CurrentViewController: UIViewController {
         
         getComic()
         
+        let tapGesture = UITapGestureRecognizer()
+        let tapSelector : Selector = "addComicToFavorites:"
+        tapGesture.numberOfTapsRequired = 2
+        tapGesture.addTarget(self, action: tapSelector)
+        comicImageView.addGestureRecognizer(tapGesture)
     }
+    
+    func addComicToFavorites(sender: AnyObject) {
+        print("Image \(comic!.cNum) tapped")
+    }
+    
     
     func getComic(comicNum:Int? = nil) {
         let api = APIManager()
@@ -33,6 +45,7 @@ class CurrentViewController: UIViewController {
     }
     
     func didLoadData(comic: Comic) {
+        self.comic = comic
         self.navigationItem.title = comic.cTitle
         
         comicDateLabel.text = comic.displayDate()

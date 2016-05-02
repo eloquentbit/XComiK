@@ -39,14 +39,19 @@ class LoadingIndicatorView {
         let overlay = UIView(frame: overlayTarget.frame)
         overlay.center = overlayTarget.center
         overlay.alpha = 0
+        overlay.translatesAutoresizingMaskIntoConstraints = true
+        overlay.autoresizingMask = [.FlexibleLeftMargin, .FlexibleHeight, .FlexibleWidth, .FlexibleRightMargin, .FlexibleTopMargin, .FlexibleBottomMargin]
         overlay.backgroundColor = UIColor.whiteColor()
         overlayTarget.addSubview(overlay)
         overlayTarget.bringSubviewToFront(overlay)
         
         // Create and animate the activity indicator
         let indicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.WhiteLarge)
-        indicator.color = UIColor.blackColor()
-        indicator.center = overlayTarget.center
+        indicator.color = UIColor(red: 255.0/255.0, green: 86.0/255.0, blue: 79.0/255.0, alpha: 1.0)
+        indicator.translatesAutoresizingMaskIntoConstraints = true
+        indicator.center = overlay.center
+        indicator.translatesAutoresizingMaskIntoConstraints = true
+        indicator.autoresizingMask = [.FlexibleLeftMargin, .FlexibleHeight, .FlexibleWidth, .FlexibleRightMargin, .FlexibleTopMargin, .FlexibleBottomMargin]
         indicator.startAnimating()
         overlay.addSubview(indicator)
         
@@ -54,10 +59,12 @@ class LoadingIndicatorView {
         if let textString = loadingText {
             let label = UILabel()
             label.text = textString
-            label.font = UIFont(name: "Avenir-Heavy", size: 16.0)
+            label.font = UIFont(name: "Avenir-Heavy", size: 14.0)
             label.textColor = UIColor.blackColor()
             label.sizeToFit()
             label.center = CGPoint(x: indicator.center.x, y: indicator.center.y + 30)
+            label.translatesAutoresizingMaskIntoConstraints = true
+            label.autoresizingMask = [.FlexibleLeftMargin, .FlexibleRightMargin, .FlexibleTopMargin, .FlexibleBottomMargin]
             overlay.addSubview(label)
         }
         

@@ -22,8 +22,6 @@ class ArchiveTableViewController: UITableViewController {
         
         navigationItem.title = "Archive"
         tableView.separatorStyle = .None
-        
-        tableView.translatesAutoresizingMaskIntoConstraints = false
     }
     
     func loadUserSettings() {
@@ -34,7 +32,7 @@ class ArchiveTableViewController: UITableViewController {
         
         let api = APIManager()
         
-        LoadingIndicatorView.show(self.view, loadingText: "Loading...")
+        LoadingIndicatorView.show(self.view)
         
         for index in upTo-count!..<upTo {
             let url = "http://xkcd.com/\(index)/info.0.json"
@@ -45,11 +43,16 @@ class ArchiveTableViewController: UITableViewController {
     func didLoadArchiveData(comic: Comic) {
         comics.append(comic)
         
+        tableView.separatorStyle = .SingleLine
+        
+        tableView.beginUpdates()
+        tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: comics.count - 1, inSection: 0)], withRowAnimation: .Fade)
+        tableView.endUpdates()
+        
         if comics.count == 100 {
             comics.sortInPlace { $0.cNum > $1.cNum }
-            LoadingIndicatorView.hide()
             tableView.reloadData()
-            tableView.separatorStyle = .SingleLine
+            LoadingIndicatorView.hide()
         }
     }
     
