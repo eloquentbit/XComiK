@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ChameleonFramework
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,14 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        UIApplication.sharedApplication().statusBarStyle = .LightContent
-        UITabBar.appearance().tintColor = UIColor(red: 255.0/255.0, green: 86.0/255.0, blue: 79.0/255.0, alpha: 1.0)
+        //UIApplication.sharedApplication().statusBarStyle = .LightContent
+        
+        Chameleon.setGlobalThemeUsingPrimaryColor(FlatWatermelonDark(), withContentStyle: .Light)
         
         let customFont = UIFont(name: "Avenir-Roman", size: 16.0)
         UIBarButtonItem.appearance().setTitleTextAttributes([NSFontAttributeName: customFont!], forState: UIControlState.Normal)
         
-        //print(UIFont.fontNamesForFamilyName("Avenir"))
-
         return true
     }
 

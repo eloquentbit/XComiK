@@ -6,6 +6,7 @@
 //  Copyright © 2015 Vince Chan. All rights reserved.
 //
 import UIKit
+import ChameleonFramework
 
 class LoadingIndicatorView {
     
@@ -41,26 +42,27 @@ class LoadingIndicatorView {
         overlay.alpha = 0
         overlay.translatesAutoresizingMaskIntoConstraints = true
         overlay.autoresizingMask = [.FlexibleLeftMargin, .FlexibleHeight, .FlexibleWidth, .FlexibleRightMargin, .FlexibleTopMargin, .FlexibleBottomMargin]
-        overlay.backgroundColor = UIColor.whiteColor()
+        overlay.backgroundColor = FlatWhiteDark()
         overlayTarget.addSubview(overlay)
         overlayTarget.bringSubviewToFront(overlay)
         
         // Create and animate the activity indicator
         let indicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.WhiteLarge)
-        indicator.color = UIColor(red: 255.0/255.0, green: 86.0/255.0, blue: 79.0/255.0, alpha: 1.0)
-        indicator.translatesAutoresizingMaskIntoConstraints = true
+        indicator.color = FlatWatermelonDark()
         indicator.center = overlay.center
-        indicator.translatesAutoresizingMaskIntoConstraints = true
-        indicator.autoresizingMask = [.FlexibleLeftMargin, .FlexibleHeight, .FlexibleWidth, .FlexibleRightMargin, .FlexibleTopMargin, .FlexibleBottomMargin]
+        indicator.translatesAutoresizingMaskIntoConstraints = false
+        //indicator.autoresizingMask = [.FlexibleLeftMargin, .FlexibleHeight, .FlexibleWidth, .FlexibleRightMargin, .FlexibleTopMargin, .FlexibleBottomMargin]
         indicator.startAnimating()
         overlay.addSubview(indicator)
+        NSLayoutConstraint(item: indicator, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: overlay, attribute: NSLayoutAttribute.CenterX, multiplier: 1, constant: 0).active = true
+        NSLayoutConstraint(item: indicator, attribute: NSLayoutAttribute.CenterY, relatedBy: NSLayoutRelation.Equal, toItem: overlay, attribute: NSLayoutAttribute.CenterY, multiplier: 1, constant: 0).active = true
         
         // Create label
         if let textString = loadingText {
             let label = UILabel()
             label.text = textString
             label.font = UIFont(name: "Avenir-Heavy", size: 14.0)
-            label.textColor = UIColor.blackColor()
+            label.textColor = FlatBlackDark()
             label.sizeToFit()
             label.center = CGPoint(x: indicator.center.x, y: indicator.center.y + 30)
             label.translatesAutoresizingMaskIntoConstraints = true
