@@ -28,7 +28,7 @@ class ArchiveTableViewController: UITableViewController {
         lastComicNum = NSUserDefaults.standardUserDefaults().integerForKey("lastComicNum")
     }
     
-    func loadArchive(upTo: Int, numberOfComics count: Int? = 500) {
+    func loadArchive(upTo: Int, numberOfComics count: Int? = 100) {
         
         let api = APIManager()
         
@@ -49,7 +49,7 @@ class ArchiveTableViewController: UITableViewController {
         tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: comics.count - 1, inSection: 0)], withRowAnimation: .Fade)
         tableView.endUpdates()
         
-        if comics.count == 500 {
+        if comics.count == 100 {
             comics.sortInPlace { $0.cNum > $1.cNum }
             tableView.reloadData()
             LoadingIndicatorView.hide()

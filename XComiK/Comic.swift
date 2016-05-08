@@ -9,104 +9,47 @@
 import Foundation
 
 class Comic {
-    private var _cTitle:String
-    private var _cImageUrl:String
-    private var _cNum:Int
-    private var _cAltText:String
-    private var _cYear:String
-    private var _cMonth:String
-    private var _cDay:String
+    
+    private(set) var cTitle:String
+    private(set) var cImageUrl:String
+    private(set) var cNum:Int
+    private(set) var cAltText:String
+    private(set) var cYear:String
+    private(set) var cMonth:String
+    private(set) var cDay:String
     
     // This variable gets created from the UI
     var vImageData:NSData?
     
-    var cTitle: String {
-        return _cTitle
+    init() {
+        self.cTitle = ""
+        self.cImageUrl = ""
+        self.cNum = 0
+        self.cAltText = ""
+        self.cYear = ""
+        self.cMonth = ""
+        self.cDay = ""
     }
     
-    var cImageUrl: String {
-        return _cImageUrl
-    }
-    
-    var cNum:Int {
-        return _cNum
-    }
-    
-    var cAltText: String {
-        return _cAltText
-    }
-    
-    var cYear: String {
-        return _cYear
-    }
-    
-    var cMonth: String {
-        return _cMonth
-    }
-    
-    var cDay: String {
-        return _cDay
-    }
-    
-    init(data: JSONDictionary) {
+    init(cTitle: String, cImageUrl: String, cNum: Int, cAltText: String, cYear: String, cMonth: String, cDay: String) {
         
-        // Comic title
-        if let title = data["title"] as? String {
-            self._cTitle = title
-        } else {
-            _cTitle = ""
-        }
-        
-        // Comic image
-        if let imgUrl = data["img"] as? String {
-            self._cImageUrl = imgUrl
-        } else {
-            _cImageUrl = ""
-        }
-        
-        // Comic number
-        if let num = data["num"] as? Int {
-            self._cNum = num
-        } else {
-            _cNum = 0
-        }
-        
-        // Comic description
-        if let altText = data["alt"] as? String {
-            self._cAltText = altText
-        } else {
-            _cAltText = ""
-        }
-        
-        // Comic year
-        if let year = data["year"] as? String {
-            self._cYear = year
-        } else {
-            _cYear = ""
-        }
-        
-        // Comic month
-        if let month = data["month"] as? String {
-            self._cMonth = month
-        } else {
-            _cMonth = ""
-        }
-        
-        // Comic day
-        if let day = data["day"] as? String {
-            self._cDay = day
-        } else {
-            _cDay = ""
-        }
-        
+        self.cTitle = cTitle
+        self.cImageUrl = cImageUrl
+        self.cNum = cNum
+        self.cAltText = cAltText
+        self.cYear = cYear
+        self.cMonth = cMonth
+        self.cDay = cDay
+                
     }
     
     func displayDate() -> String {
+        
         let calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)
         let components = NSDateComponents()
-        components.day = Int(self._cDay)!
-        components.month = Int(self._cMonth)!
-        components.year = Int(self._cYear)!
+        components.day = Int(self.cDay)!
+        components.month = Int(self.cMonth)!
+        components.year = Int(self.cYear)!
         
         let dateFormatter = NSDateFormatter()
         dateFormatter.locale = NSLocale.currentLocale()
