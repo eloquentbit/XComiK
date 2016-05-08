@@ -10,25 +10,19 @@ import UIKit
 
 class ArchiveTableViewController: UITableViewController {
     
-    var lastComicNum = 0
+    //var lastComicNum = 0
     var comics = [Comic]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loadUserSettings()
-        
-        loadArchive(lastComicNum)
+        loadArchive(SettingsManager.lastComicId)
         
         navigationItem.title = "Archive"
         tableView.separatorStyle = .None
     }
     
-    func loadUserSettings() {
-        lastComicNum = NSUserDefaults.standardUserDefaults().integerForKey("lastComicNum")
-    }
-    
-    func loadArchive(upTo: Int, numberOfComics count: Int? = 100) {
+    func loadArchive(upTo: Int, numberOfComics count: Int? = SettingsManager.maxNumberOfComicsToFetch) {
         
         let api = APIManager()
         
@@ -43,14 +37,15 @@ class ArchiveTableViewController: UITableViewController {
     func didLoadArchiveData(comic: Comic) {
         comics.append(comic)
         
-        tableView.separatorStyle = .SingleLine
+//        tableView.separatorStyle = .SingleLine
         
-        tableView.beginUpdates()
-        tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: comics.count - 1, inSection: 0)], withRowAnimation: .Fade)
-        tableView.endUpdates()
+//        tableView.beginUpdates()
+//        tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: comics.count - 1, inSection: 0)], withRowAnimation: .Fade)
+//        tableView.endUpdates()
         
-        if comics.count == 100 {
+        if comics.count == SettingsManager.maxNumberOfComicsToFetch {
             comics.sortInPlace { $0.cNum > $1.cNum }
+            tableView.separatorStyle = .SingleLine
             tableView.reloadData()
             LoadingIndicatorView.hide()
         }

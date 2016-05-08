@@ -20,6 +20,7 @@ class CurrentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Retrive the last comic
         getComic()
         
         let tapGesture = UITapGestureRecognizer()
@@ -29,6 +30,7 @@ class CurrentViewController: UIViewController {
         comicImageView.addGestureRecognizer(tapGesture)
     }
     
+    // MARK: - ToDO
     func addComicToFavorites(sender: AnyObject) {
         print("Image \(comic!.cNum) tapped")
     }
@@ -60,7 +62,7 @@ class CurrentViewController: UIViewController {
             GetVideoImage(comic, imageView: comicImageView)
         }
         
-        saveLastComicNum(comic.cNum)
+        SettingsManager.lastComicId = comic.cNum
         
     }
     
@@ -84,8 +86,8 @@ class CurrentViewController: UIViewController {
     }
     
     // This function saves the last comic number into NSUserDefaults
-    private func saveLastComicNum(num: Int) {
-        NSUserDefaults.standardUserDefaults().setInteger(num, forKey: "lastComicNum")
-    }
+//    private func saveLastComicNum(num: Int) {
+//        NSUserDefaults.standardUserDefaults().setInteger(num, forKey: "lastComicNum")
+//    }
 
 }

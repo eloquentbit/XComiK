@@ -11,6 +11,7 @@
 		8116C0051CCD1FE9002EED84 /* ArchiveTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8116C0041CCD1FE9002EED84 /* ArchiveTableViewController.swift */; };
 		8116C0071CCD2022002EED84 /* ArchiveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8116C0061CCD2022002EED84 /* ArchiveTableViewCell.swift */; };
 		811E6FC91CD4D95500C00A18 /* ComicDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811E6FC81CD4D95500C00A18 /* ComicDetailVC.swift */; };
+		814F60B41CDF8702009A336B /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814F60B31CDF8702009A336B /* SettingsManager.swift */; };
 		816A54831CDF15920000F2C5 /* JsonDataExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816A54821CDF15920000F2C5 /* JsonDataExtractor.swift */; };
 		818A85631CD5DB7C00B25892 /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818A85621CD5DB7C00B25892 /* LoadingIndicatorView.swift */; };
 		81F30C091CCCAC650003741C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F30C081CCCAC650003741C /* AppDelegate.swift */; };
@@ -29,6 +30,7 @@
 		8116C0041CCD1FE9002EED84 /* ArchiveTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchiveTableViewController.swift; sourceTree = "<group>"; };
 		8116C0061CCD2022002EED84 /* ArchiveTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchiveTableViewCell.swift; sourceTree = "<group>"; };
 		811E6FC81CD4D95500C00A18 /* ComicDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicDetailVC.swift; sourceTree = "<group>"; };
+		814F60B31CDF8702009A336B /* SettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
 		816A54821CDF15920000F2C5 /* JsonDataExtractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonDataExtractor.swift; sourceTree = "<group>"; };
 		818A85621CD5DB7C00B25892 /* LoadingIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorView.swift; sourceTree = "<group>"; };
 		81F30C051CCCAC650003741C /* XComiK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XComiK.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +102,7 @@
 			children = (
 				818A85621CD5DB7C00B25892 /* LoadingIndicatorView.swift */,
 				81F30C231CCCB5360003741C /* Constants.swift */,
+				814F60B31CDF8702009A336B /* SettingsManager.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				811E6FC91CD4D95500C00A18 /* ComicDetailVC.swift in Sources */,
 				81F30C261CCCB5BC0003741C /* Comic.swift in Sources */,
 				816A54831CDF15920000F2C5 /* JsonDataExtractor.swift in Sources */,
+				814F60B41CDF8702009A336B /* SettingsManager.swift in Sources */,
 				81F30C241CCCB5360003741C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +404,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eloquentbit.XComiK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -412,6 +417,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eloquentbit.XComiK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
