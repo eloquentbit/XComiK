@@ -7,12 +7,25 @@
 //
 
 import UIKit
+import ChameleonFramework
 
 class ArchiveTableViewCell: UITableViewCell {
     
     var comic: Comic? {
         didSet {
             updateCell()
+        }
+    }
+    
+    override var highlighted: Bool {
+        didSet {
+            let selectedView = UIView()
+            selectedView.backgroundColor = FlatWatermelon()
+            selectedBackgroundView = selectedView
+            comicTitle.highlightedTextColor = UIColor.whiteColor()
+            comicNum.highlightedTextColor = UIColor.whiteColor()
+            comicDate.highlightedTextColor = UIColor.whiteColor()
+            comicAbstract.highlightedTextColor = UIColor.whiteColor()
         }
     }
     

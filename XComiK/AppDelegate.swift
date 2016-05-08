@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //UIApplication.sharedApplication().statusBarStyle = .LightContent
         
-        Chameleon.setGlobalThemeUsingPrimaryColor(FlatWatermelonDark(), withContentStyle: .Light)
+        Chameleon.setGlobalThemeUsingPrimaryColor(FlatWatermelon(), withContentStyle: .Light)
         
         let customFont = UIFont(name: "Avenir-Roman", size: 16.0)
         UIBarButtonItem.appearance().setTitleTextAttributes([NSFontAttributeName: customFont!], forState: UIControlState.Normal)

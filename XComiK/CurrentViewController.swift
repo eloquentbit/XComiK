@@ -48,8 +48,28 @@ class CurrentViewController: UIViewController {
     
     func didLoadData(comic: Comic) {
         self.comic = comic
+        
+        SettingsManager.lastComicId = comic.cNum
+
         self.navigationItem.title = comic.cTitle
         
+        setupView(comic)
+        
+//        comicDateLabel.text = comic.displayDate()
+//        comicNumLabel.text = "#\(comic.cNum)"
+//        comicAltLabel.text = comic.cAltText
+//        
+//        if comic.vImageData != nil {
+//            print("Get data from array...")
+//            comicImageView.image = UIImage(data: comic.vImageData!)
+//        } else {
+//            print("Get images in background thread")
+//            GetVideoImage(comic, imageView: comicImageView)
+//        }
+        
+    }
+    
+    private func setupView(comic: Comic) {
         comicDateLabel.text = comic.displayDate()
         comicNumLabel.text = "#\(comic.cNum)"
         comicAltLabel.text = comic.cAltText
@@ -61,12 +81,9 @@ class CurrentViewController: UIViewController {
             print("Get images in background thread")
             GetVideoImage(comic, imageView: comicImageView)
         }
-        
-        SettingsManager.lastComicId = comic.cNum
-        
     }
     
-    func GetVideoImage(comic: Comic, imageView: UIImageView) {
+    private func GetVideoImage(comic: Comic, imageView: UIImageView) {
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
             
