@@ -20,6 +20,9 @@ class ArchiveTableViewController: UITableViewController {
         
         navigationItem.title = "Archive"
         tableView.separatorStyle = .None
+        
+        tableView.estimatedRowHeight = tableView.rowHeight
+        tableView.rowHeight = UITableViewAutomaticDimension
     }
     
     func loadArchive(upTo: Int, numberOfComics count: Int? = SettingsManager.maxNumberOfComicsToFetch) {
