@@ -22,12 +22,6 @@ class CurrentViewController: UIViewController {
         
         // Retrive the last comic
         getComic()
-        
-        let tapGesture = UITapGestureRecognizer()
-        let tapSelector : Selector = "addComicToFavorites:"
-        tapGesture.numberOfTapsRequired = 2
-        tapGesture.addTarget(self, action: tapSelector)
-        comicImageView.addGestureRecognizer(tapGesture)
     }
     
     // MARK: - ToDO
@@ -55,18 +49,6 @@ class CurrentViewController: UIViewController {
         
         setupView(comic)
         
-//        comicDateLabel.text = comic.displayDate()
-//        comicNumLabel.text = "#\(comic.cNum)"
-//        comicAltLabel.text = comic.cAltText
-//        
-//        if comic.vImageData != nil {
-//            print("Get data from array...")
-//            comicImageView.image = UIImage(data: comic.vImageData!)
-//        } else {
-//            print("Get images in background thread")
-//            GetVideoImage(comic, imageView: comicImageView)
-//        }
-        
     }
     
     private func setupView(comic: Comic) {
@@ -81,6 +63,12 @@ class CurrentViewController: UIViewController {
             print("Get images in background thread")
             GetVideoImage(comic, imageView: comicImageView)
         }
+        
+        let tapGesture = UITapGestureRecognizer()
+        let tapSelector : Selector = "addComicToFavorites:"
+        tapGesture.numberOfTapsRequired = 2
+        tapGesture.addTarget(self, action: tapSelector)
+        comicImageView.addGestureRecognizer(tapGesture)
     }
     
     private func GetVideoImage(comic: Comic, imageView: UIImageView) {
@@ -101,10 +89,4 @@ class CurrentViewController: UIViewController {
         }
         
     }
-    
-    // This function saves the last comic number into NSUserDefaults
-//    private func saveLastComicNum(num: Int) {
-//        NSUserDefaults.standardUserDefaults().setInteger(num, forKey: "lastComicNum")
-//    }
-
 }

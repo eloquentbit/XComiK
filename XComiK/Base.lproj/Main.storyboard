@@ -67,9 +67,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SaI-Zb-8SG">
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="LGG-KC-4ag">
-                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="dxS-Cb-0VM"/>
                     </navigationItem>
                     <connections>
                         <outlet property="comicAltLabel" destination="Xzc-UZ-PfW" id="6L0-8E-esb"/>
@@ -201,10 +199,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cl5-vM-Ygh">
-                                <rect key="frame" x="20" y="70" width="560" height="320"/>
+                                <rect key="frame" x="20" y="70" width="560" height="325"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X86-xJ-GIh">
-                                <rect key="frame" x="20" y="398" width="560" height="85"/>
+                                <rect key="frame" x="20" y="403" width="560" height="85"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="V5v-Bz-0gZ"/>
                                 </constraints>
@@ -228,6 +226,11 @@
                             <constraint firstItem="Cl5-vM-Ygh" firstAttribute="top" secondItem="Zag-Qa-nLn" secondAttribute="bottom" constant="8" symbolic="YES" id="r5C-bd-UqX"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="5SJ-x8-xBv">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="nuF-Ir-qtd"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="comicAltLabel" destination="X86-xJ-GIh" id="YVP-9l-7wi"/>
                         <outlet property="comicDateLabel" destination="zuS-zr-vhf" id="xe2-K1-WKu"/>
@@ -237,7 +240,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gBA-7m-S6B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2812" y="136"/>
+            <point key="canvasLocation" x="2748" y="883"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="xBX-Cz-7Fa">
@@ -260,7 +263,7 @@
         <scene sceneID="Wlz-A9-JFb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CDr-ju-SMQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Current" image="Current Icon - Inactive" id="ZGi-KC-sNP"/>
+                    <tabBarItem key="tabBarItem" title="Current" image="Current" id="ZGi-KC-sNP"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="6L6-A6-haw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -284,7 +287,7 @@
         <scene sceneID="b54-jv-hyh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jNR-am-288" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Archive" image="Album Icon - Inactive" id="gIL-fn-0U4"/>
+                    <tabBarItem key="tabBarItem" title="Archive" image="Archive" id="gIL-fn-0U4"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="vCU-lg-zW2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -306,7 +309,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Album Icon - Inactive" width="24" height="24"/>
-        <image name="Current Icon - Inactive" width="25" height="24"/>
+        <image name="Archive" width="32" height="32"/>
+        <image name="Current" width="25" height="24"/>
     </resources>
 </document>
