@@ -21,8 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Chameleon.setGlobalThemeUsingPrimaryColor(FlatWatermelon(), withContentStyle: .Light)
         
-        print(UIFont.familyNames())
-        
         let customFont = UIFont(name: "Graviola", size: 18.0)
         let tabBarFont = UIFont(name: "Graviola", size: 10.0)
         
