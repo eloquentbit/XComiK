@@ -48,7 +48,7 @@ class LoadingIndicatorView {
         
         // Create and animate the activity indicator
         let indicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.WhiteLarge)
-        indicator.color = FlatWatermelonDark()
+        indicator.color = FlatTeal()
         indicator.center = overlay.center
         indicator.translatesAutoresizingMaskIntoConstraints = false
         //indicator.autoresizingMask = [.FlexibleLeftMargin, .FlexibleHeight, .FlexibleWidth, .FlexibleRightMargin, .FlexibleTopMargin, .FlexibleBottomMargin]

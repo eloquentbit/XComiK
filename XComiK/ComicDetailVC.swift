@@ -37,9 +37,9 @@ class ComicDetailVC: UIViewController {
             GetVideoImage(comic, imageView: comicImageView)
         }
         
-        navigationController?.navigationBar.titleTextAttributes = [
-            NSForegroundColorAttributeName: UIColor.whiteColor(),
-            NSFontAttributeName: UIFont(name: "Graviola Soft", size: 20.0)!]
+//        navigationController?.navigationBar.titleTextAttributes = [
+//            NSForegroundColorAttributeName: UIColor.whiteColor(),
+//            NSFontAttributeName: UIFont(name: "Graviola Soft", size: 20.0)!]
     }
     
     func GetVideoImage(comic: Comic, imageView: UIImageView) {

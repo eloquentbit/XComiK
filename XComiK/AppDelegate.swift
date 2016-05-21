@@ -17,15 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        //UIApplication.sharedApplication().statusBarStyle = .LightContent
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+    
+        UINavigationBar.appearance().titleTextAttributes =  [
+            NSForegroundColorAttributeName: UIColor.whiteColor(),
+            NSFontAttributeName: UIFont(name: "Graviola Soft", size: 20.0)!]
         
-        Chameleon.setGlobalThemeUsingPrimaryColor(FlatWatermelon(), withContentStyle: .Light)
         
         let customFont = UIFont(name: "Graviola", size: 18.0)
         let tabBarFont = UIFont(name: "Graviola", size: 10.0)
         
         UIBarButtonItem.appearance().setTitleTextAttributes([NSFontAttributeName: customFont!], forState: UIControlState.Normal)
         UITabBarItem.appearance().setTitleTextAttributes([NSFontAttributeName: tabBarFont!], forState: .Normal)
+        UITabBar.appearance().tintColor = FlatTeal()
         
         return true
     }

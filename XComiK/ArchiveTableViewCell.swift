@@ -20,7 +20,7 @@ class ArchiveTableViewCell: UITableViewCell {
     override var highlighted: Bool {
         didSet {
             let selectedView = UIView()
-            selectedView.backgroundColor = FlatWatermelon()
+            selectedView.backgroundColor = FlatTeal()
             selectedBackgroundView = selectedView
             comicTitle.highlightedTextColor = UIColor.whiteColor()
             comicNum.highlightedTextColor = UIColor.whiteColor()

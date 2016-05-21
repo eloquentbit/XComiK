@@ -19,9 +19,7 @@ class ArchiveTableViewController: UITableViewController {
         loadArchive(SettingsManager.lastComicId)
         
         navigationItem.title = "Archive"
-        navigationController?.navigationBar.titleTextAttributes = [
-            NSForegroundColorAttributeName: UIColor.whiteColor(),
-            NSFontAttributeName: UIFont(name: "Graviola Soft", size: 20.0)!]
+
         tableView.separatorStyle = .None
         
         tableView.estimatedRowHeight = tableView.rowHeight
