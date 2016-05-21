@@ -51,5 +51,11 @@
 	</dict>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Graviola-Regular.otf</string>
+		<string>GraviolaSoft-Medium.otf</string>
+		<string>GraviolaSoft-MediumItalic.otf</string>
+	</array>
 </dict>
 </plist>

@@ -21,8 +21,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Chameleon.setGlobalThemeUsingPrimaryColor(FlatWatermelon(), withContentStyle: .Light)
         
-        let customFont = UIFont(name: "Avenir-Roman", size: 16.0)
+        print(UIFont.familyNames())
+        
+        let customFont = UIFont(name: "Graviola", size: 18.0)
+        let tabBarFont = UIFont(name: "Graviola", size: 10.0)
+        
         UIBarButtonItem.appearance().setTitleTextAttributes([NSFontAttributeName: customFont!], forState: UIControlState.Normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSFontAttributeName: tabBarFont!], forState: .Normal)
         
         return true
     }

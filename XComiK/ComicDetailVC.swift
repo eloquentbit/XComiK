@@ -21,6 +21,11 @@ class ComicDetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupView()
+    }
+    
+    private func setupView() {
+        
         self.navigationItem.title = comic.cTitle
         comicDateLabel.text = comic.displayDate()
         comicNumLabel.text = "#\(comic.cNum)"
@@ -32,6 +37,9 @@ class ComicDetailVC: UIViewController {
             GetVideoImage(comic, imageView: comicImageView)
         }
         
+        navigationController?.navigationBar.titleTextAttributes = [
+            NSForegroundColorAttributeName: UIColor.whiteColor(),
+            NSFontAttributeName: UIFont(name: "Graviola Soft", size: 20.0)!]
     }
     
     func GetVideoImage(comic: Comic, imageView: UIImageView) {

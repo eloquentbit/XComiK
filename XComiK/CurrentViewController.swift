@@ -44,8 +44,6 @@ class CurrentViewController: UIViewController {
         self.comic = comic
         
         SettingsManager.lastComicId = comic.cNum
-
-        self.navigationItem.title = comic.cTitle
         
         setupView(comic)
         
@@ -55,6 +53,11 @@ class CurrentViewController: UIViewController {
         comicDateLabel.text = comic.displayDate()
         comicNumLabel.text = "#\(comic.cNum)"
         comicAltLabel.text = comic.cAltText
+        
+        navigationItem.title = comic.cTitle
+        navigationController?.navigationBar.titleTextAttributes = [
+            NSForegroundColorAttributeName: UIColor.whiteColor(),
+            NSFontAttributeName: UIFont(name: "Graviola Soft", size: 20.0)!]
         
         if comic.vImageData != nil {
             print("Get data from array...")

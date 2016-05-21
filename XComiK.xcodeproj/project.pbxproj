@@ -21,6 +21,9 @@
 		81F30C241CCCB5360003741C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F30C231CCCB5360003741C /* Constants.swift */; };
 		81F30C261CCCB5BC0003741C /* Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F30C251CCCB5BC0003741C /* Comic.swift */; };
 		81F30C281CCCB69F0003741C /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F30C271CCCB69F0003741C /* APIManager.swift */; };
+		81FB6CC01CF0300D00C961A2 /* Graviola-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 81FB6CBD1CF0300D00C961A2 /* Graviola-Regular.otf */; };
+		81FB6CC11CF0300D00C961A2 /* GraviolaSoft-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 81FB6CBE1CF0300D00C961A2 /* GraviolaSoft-Medium.otf */; };
+		81FB6CC21CF0300D00C961A2 /* GraviolaSoft-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 81FB6CBF1CF0300D00C961A2 /* GraviolaSoft-MediumItalic.otf */; };
 		FA0373573B34FF5F6A3AE8F9 /* Pods_XComiK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F707BEA6B46B102F569F127E /* Pods_XComiK.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +45,9 @@
 		81F30C231CCCB5360003741C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		81F30C251CCCB5BC0003741C /* Comic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comic.swift; sourceTree = "<group>"; };
 		81F30C271CCCB69F0003741C /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		81FB6CBD1CF0300D00C961A2 /* Graviola-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Graviola-Regular.otf"; sourceTree = "<group>"; };
+		81FB6CBE1CF0300D00C961A2 /* GraviolaSoft-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GraviolaSoft-Medium.otf"; sourceTree = "<group>"; };
+		81FB6CBF1CF0300D00C961A2 /* GraviolaSoft-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GraviolaSoft-MediumItalic.otf"; sourceTree = "<group>"; };
 		D31BF2BE2C485B7FD515D741 /* Pods-XComiK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XComiK.release.xcconfig"; path = "Pods/Target Support Files/Pods-XComiK/Pods-XComiK.release.xcconfig"; sourceTree = "<group>"; };
 		F707BEA6B46B102F569F127E /* Pods_XComiK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XComiK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -113,6 +119,7 @@
 				81F30C081CCCAC650003741C /* AppDelegate.swift */,
 				81F30C0F1CCCAC650003741C /* Assets.xcassets */,
 				81F30C141CCCAC650003741C /* Info.plist */,
+				81FB6CC31CF0301A00C961A2 /* Fonts */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -145,6 +152,16 @@
 				81F30C0C1CCCAC650003741C /* Main.storyboard */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		81FB6CC31CF0301A00C961A2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				81FB6CBD1CF0300D00C961A2 /* Graviola-Regular.otf */,
+				81FB6CBE1CF0300D00C961A2 /* GraviolaSoft-Medium.otf */,
+				81FB6CBF1CF0300D00C961A2 /* GraviolaSoft-MediumItalic.otf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		8AF60EDA670FA7654BA4F597 /* Frameworks */ = {
@@ -220,6 +237,9 @@
 				81F30C131CCCAC650003741C /* LaunchScreen.storyboard in Resources */,
 				81F30C101CCCAC650003741C /* Assets.xcassets in Resources */,
 				81F30C0E1CCCAC650003741C /* Main.storyboard in Resources */,
+				81FB6CC21CF0300D00C961A2 /* GraviolaSoft-MediumItalic.otf in Resources */,
+				81FB6CC01CF0300D00C961A2 /* Graviola-Regular.otf in Resources */,
+				81FB6CC11CF0300D00C961A2 /* GraviolaSoft-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

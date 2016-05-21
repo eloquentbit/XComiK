@@ -5,6 +5,24 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Graviola-Regular.otf">
+            <string>Graviola-Regular</string>
+            <string>Graviola-Regular</string>
+            <string>Graviola-Regular</string>
+            <string>Graviola-Regular</string>
+            <string>Graviola-Regular</string>
+            <string>Graviola-Regular</string>
+        </mutableArray>
+        <mutableArray key="GraviolaSoft-Medium.otf">
+            <string>GraviolaSoft-Medium</string>
+            <string>GraviolaSoft-Medium</string>
+        </mutableArray>
+        <mutableArray key="GraviolaSoft-MediumItalic.otf">
+            <string>GraviolaSoft-MediumItalic</string>
+            <string>GraviolaSoft-MediumItalic</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Current View Controller-->
         <scene sceneID="Iro-xO-Zf7">
@@ -24,7 +42,7 @@
                                     <constraint firstAttribute="width" constant="111" id="X4f-RT-8FZ"/>
                                     <constraint firstAttribute="height" constant="21" id="vcH-h5-54r"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="Graviola-Regular" family="Graviola" pointSize="12"/>
                                 <color key="textColor" red="0.13346317410469055" green="0.18231484293937683" blue="0.25190103054046631" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -34,7 +52,7 @@
                                     <constraint firstAttribute="width" constant="88" id="huF-Ak-xGv"/>
                                     <constraint firstAttribute="height" constant="21" id="rf9-g0-qfi"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="11"/>
+                                <fontDescription key="fontDescription" name="Graviola-Regular" family="Graviola" pointSize="11"/>
                                 <color key="textColor" red="0.13346317410469055" green="0.18231484293937683" blue="0.25190103054046631" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -43,8 +61,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="lTx-X2-W0I"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="12"/>
-                                <color key="textColor" red="0.1334631741" green="0.1823148429" blue="0.25190103050000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GraviolaSoft-MediumItalic" family="Graviola Soft" pointSize="12"/>
+                                <color key="textColor" red="0.17077735066413879" green="0.30895513296127319" blue="0.37797331809997559" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5kk-WY-5Hh">
@@ -102,7 +120,7 @@
                                                 <constraint firstAttribute="width" constant="398" id="CXP-b6-Yh0"/>
                                                 <constraint firstAttribute="height" constant="21" id="pNP-AU-Cus"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                                            <fontDescription key="fontDescription" name="GraviolaSoft-Medium" family="Graviola Soft" pointSize="18"/>
                                             <color key="textColor" red="0.1334631741" green="0.1823148429" blue="0.25190103050000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -111,8 +129,8 @@
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="219" id="Q2K-Su-OiI"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="11"/>
-                                            <color key="textColor" red="0.1334631741" green="0.1823148429" blue="0.25190103050000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="GraviolaSoft-Medium" family="Graviola Soft" pointSize="11"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.5490196078431373" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qo-iW-e4E">
@@ -120,14 +138,14 @@
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="42" id="2kg-Nb-Yni"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="11"/>
-                                            <color key="textColor" red="0.42655369639396667" green="0.47584608197212219" blue="0.48026475310325623" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="Graviola-Regular" family="Graviola" pointSize="11"/>
+                                            <color key="textColor" red="0.20392156862745098" green="0.29019607843137252" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chd-ck-svh">
                                             <rect key="frame" x="30" y="66" width="540" height="70"/>
-                                            <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="12"/>
-                                            <color key="textColor" red="0.13346317410469055" green="0.18231484293937683" blue="0.25190103054046631" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="Graviola-Regular" family="Graviola" pointSize="12"/>
+                                            <color key="textColor" red="0.17077735066413879" green="0.30895513296127319" blue="0.37797331809997559" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -184,7 +202,7 @@
                                     <constraint firstAttribute="height" constant="21" id="SO8-gr-PVD"/>
                                     <constraint firstAttribute="width" constant="111" id="gt9-ZI-w5L"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="Graviola-Regular" family="Graviola" pointSize="12"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -194,7 +212,7 @@
                                     <constraint firstAttribute="width" constant="88" id="8SJ-xH-G7N"/>
                                     <constraint firstAttribute="height" constant="21" id="WOs-1t-fEb"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="11"/>
+                                <fontDescription key="fontDescription" name="Graviola-Regular" family="Graviola" pointSize="11"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -206,8 +224,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="V5v-Bz-0gZ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="12"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GraviolaSoft-MediumItalic" family="Graviola Soft" pointSize="12"/>
+                                <color key="textColor" red="0.17077735066413879" green="0.30895513296127319" blue="0.37797331809997559" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -270,7 +288,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                            <fontDescription key="fontDescription" name="GraviolaSoft-Medium" family="Graviola Soft" pointSize="20"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                         </textAttributes>
                     </navigationBar>
@@ -294,7 +312,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                            <fontDescription key="fontDescription" name="GraviolaSoft-Medium" family="Graviola Soft" pointSize="20"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                         </textAttributes>
                     </navigationBar>
