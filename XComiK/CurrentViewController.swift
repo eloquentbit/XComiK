@@ -55,9 +55,6 @@ class CurrentViewController: UIViewController {
         comicAltLabel.text = comic.cAltText
         
         navigationItem.title = comic.cTitle
-//        navigationController?.navigationBar.titleTextAttributes = [
-//            NSForegroundColorAttributeName: UIColor.whiteColor(),
-//            NSFontAttributeName: UIFont(name: "Graviola Soft", size: 20.0)!]
         
         if comic.vImageData != nil {
             print("Get data from array...")
