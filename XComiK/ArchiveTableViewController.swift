@@ -19,6 +19,7 @@ class ArchiveTableViewController: UITableViewController {
         loadArchive(SettingsManager.lastComicId)
         
         navigationItem.title = "Archive"
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
 
         tableView.separatorStyle = .None
         
