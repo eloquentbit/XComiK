@@ -65,7 +65,7 @@ class CurrentViewController: UIViewController {
         }
         
         let tapGesture = UITapGestureRecognizer()
-        let tapSelector : Selector = "addComicToFavorites:"
+        let tapSelector : Selector = #selector(CurrentViewController.addComicToFavorites(_:))
         tapGesture.numberOfTapsRequired = 2
         tapGesture.addTarget(self, action: tapSelector)
         comicImageView.addGestureRecognizer(tapGesture)

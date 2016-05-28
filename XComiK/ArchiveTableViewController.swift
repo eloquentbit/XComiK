@@ -41,13 +41,7 @@ class ArchiveTableViewController: UITableViewController {
     
     func didLoadArchiveData(comic: Comic) {
         comics.append(comic)
-        
-//        tableView.separatorStyle = .SingleLine
-        
-//        tableView.beginUpdates()
-//        tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: comics.count - 1, inSection: 0)], withRowAnimation: .Fade)
-//        tableView.endUpdates()
-        
+                
         if comics.count == SettingsManager.maxNumberOfComicsToFetch {
             comics.sortInPlace { $0.cNum > $1.cNum }
             tableView.separatorStyle = .SingleLine
