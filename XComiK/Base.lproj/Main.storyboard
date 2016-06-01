@@ -63,7 +63,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xzc-UZ-PfW">
-                                        <rect key="frame" x="265" y="382" width="29" height="81"/>
+                                        <rect key="frame" x="265.5" y="382" width="29" height="81"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="81" id="TJO-Ag-bnt"/>
                                         </constraints>
@@ -221,7 +221,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X86-xJ-GIh">
-                                        <rect key="frame" x="265" y="387" width="29" height="81"/>
+                                        <rect key="frame" x="265.5" y="387" width="29" height="81"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="81" id="GmS-UE-yoj"/>
                                         </constraints>
