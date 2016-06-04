@@ -36,8 +36,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="iEL-tn-7n2">
-                                <rect key="frame" x="20" y="76" width="560" height="463"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="8PA-GD-29w">
+                                <rect key="frame" x="20" y="80" width="560" height="463"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Plp-H0-Ewr">
                                         <rect key="frame" x="224" y="0.0" width="111" height="21"/>
@@ -49,7 +49,7 @@
                                         <color key="textColor" red="0.13346317410469055" green="0.18231484293937683" blue="0.25190103054046631" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="340" translatesAutoresizingMaskIntoConstraints="NO" id="5kk-WY-5Hh">
+                                    <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="325" translatesAutoresizingMaskIntoConstraints="NO" id="5kk-WY-5Hh">
                                         <rect key="frame" x="0.0" y="26" width="560" height="325"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ug1-6d-wNA">
@@ -76,10 +76,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2Ha-1L-ALn" firstAttribute="top" secondItem="iEL-tn-7n2" secondAttribute="bottom" constant="12" id="JRX-Jw-3rR"/>
-                            <constraint firstItem="iEL-tn-7n2" firstAttribute="leading" secondItem="eh4-2X-JE1" secondAttribute="leadingMargin" id="RTr-yF-ZpS"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="iEL-tn-7n2" secondAttribute="trailing" id="roQ-Ab-RQd"/>
-                            <constraint firstItem="iEL-tn-7n2" firstAttribute="top" secondItem="ziK-h8-Pj6" secondAttribute="bottom" constant="12" id="tuf-uE-zYL"/>
+                            <constraint firstItem="8PA-GD-29w" firstAttribute="trailing" secondItem="eh4-2X-JE1" secondAttribute="trailingMargin" id="D2b-jY-bRi"/>
+                            <constraint firstItem="2Ha-1L-ALn" firstAttribute="top" secondItem="8PA-GD-29w" secondAttribute="bottom" constant="8" id="ZAf-dd-9eZ"/>
+                            <constraint firstItem="8PA-GD-29w" firstAttribute="top" secondItem="ziK-h8-Pj6" secondAttribute="bottom" constant="16" id="h07-4p-yFE"/>
+                            <constraint firstItem="8PA-GD-29w" firstAttribute="leading" secondItem="eh4-2X-JE1" secondAttribute="leadingMargin" id="pQz-PX-Ks2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SaI-Zb-8SG">
@@ -194,8 +194,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ip5-dw-CdY">
-                                <rect key="frame" x="20" y="76" width="560" height="468"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="XP7-uL-2o9">
+                                <rect key="frame" x="20" y="80" width="560" height="468"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zuS-zr-vhf">
                                         <rect key="frame" x="224" y="0.0" width="111" height="21"/>
@@ -207,7 +207,7 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="345" translatesAutoresizingMaskIntoConstraints="NO" id="Cl5-vM-Ygh">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="325" translatesAutoresizingMaskIntoConstraints="NO" id="Cl5-vM-Ygh">
                                         <rect key="frame" x="0.0" y="26" width="560" height="330"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zag-Qa-nLn">
@@ -234,10 +234,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Ip5-dw-CdY" firstAttribute="top" secondItem="SD9-hI-h4c" secondAttribute="bottom" constant="12" id="BBp-S9-fV2"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Ip5-dw-CdY" secondAttribute="trailing" id="PrH-7I-qmx"/>
-                            <constraint firstItem="VvB-75-bfu" firstAttribute="top" secondItem="Ip5-dw-CdY" secondAttribute="bottom" constant="12" id="wv6-Oq-Xga"/>
-                            <constraint firstItem="Ip5-dw-CdY" firstAttribute="leading" secondItem="ufH-AR-XNA" secondAttribute="leadingMargin" id="zrT-V9-cF0"/>
+                            <constraint firstItem="VvB-75-bfu" firstAttribute="top" secondItem="XP7-uL-2o9" secondAttribute="bottom" constant="8" id="Qfl-lB-ivG"/>
+                            <constraint firstItem="XP7-uL-2o9" firstAttribute="trailing" secondItem="ufH-AR-XNA" secondAttribute="trailingMargin" id="Rfb-OS-uZW"/>
+                            <constraint firstItem="XP7-uL-2o9" firstAttribute="top" secondItem="SD9-hI-h4c" secondAttribute="bottom" constant="16" id="S7Z-bm-2TM"/>
+                            <constraint firstItem="XP7-uL-2o9" firstAttribute="leading" secondItem="ufH-AR-XNA" secondAttribute="leadingMargin" id="kFF-gc-NFR"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
