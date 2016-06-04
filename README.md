@@ -8,6 +8,15 @@ This is my first iOS app.
 - View current comic
 - View the latest 100 comics
 
+## Usage
+
+Clone this repository and execute
+```
+pod install
+```
+
+Open the xcworkspace in Xcode
+
 ### TODO
 - [ ] Favorite a comic
 - [ ] Save a comic for offline view
