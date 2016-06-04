@@ -13,9 +13,3 @@ This is my first iOS app.
 - [ ] Save a comic for offline view
 - [ ] Settings Manager
 - [ ] Share a comic on Twitter / Facebook / Email
-
-### Screenshot
-
-![current comic](screenshots/current.png)
-
-![archive](screenshots/archive.png)
