@@ -40,7 +40,7 @@
                                 <rect key="frame" x="20" y="80" width="560" height="463"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Plp-H0-Ewr">
-                                        <rect key="frame" x="224" y="0.0" width="111" height="21"/>
+                                        <rect key="frame" x="225" y="0.0" width="111" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="AO5-gt-1F5"/>
                                             <constraint firstAttribute="width" constant="111" id="GiA-DY-44M"/>
@@ -63,7 +63,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xzc-UZ-PfW">
-                                        <rect key="frame" x="265.5" y="382" width="29" height="81"/>
+                                        <rect key="frame" x="266" y="382" width="29" height="81"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="81" id="TJO-Ag-bnt"/>
                                         </constraints>
@@ -198,7 +198,7 @@
                                 <rect key="frame" x="20" y="80" width="560" height="468"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zuS-zr-vhf">
-                                        <rect key="frame" x="224" y="0.0" width="111" height="21"/>
+                                        <rect key="frame" x="225" y="0.0" width="111" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="111" id="gwd-rW-cm4"/>
                                             <constraint firstAttribute="height" constant="21" id="jNf-B0-7xd"/>
@@ -221,7 +221,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X86-xJ-GIh">
-                                        <rect key="frame" x="265.5" y="387" width="29" height="81"/>
+                                        <rect key="frame" x="266" y="387" width="29" height="81"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="81" id="GmS-UE-yoj"/>
                                         </constraints>

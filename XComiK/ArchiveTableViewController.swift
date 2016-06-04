@@ -31,7 +31,7 @@ class ArchiveTableViewController: UITableViewController {
         
         let api = APIManager()
         
-        LoadingIndicatorView.show(self.view)
+        LoadingIndicatorView.show()
         
         for index in upTo-count!..<upTo {
             let url = "http://xkcd.com/\(index)/info.0.json"
