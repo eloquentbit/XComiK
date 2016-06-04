@@ -11,10 +11,10 @@
             <string>Graviola-Regular</string>
             <string>Graviola-Regular</string>
             <string>Graviola-Regular</string>
-            <string>Graviola-Regular</string>
-            <string>Graviola-Regular</string>
         </mutableArray>
         <mutableArray key="GraviolaSoft-Medium.otf">
+            <string>GraviolaSoft-Medium</string>
+            <string>GraviolaSoft-Medium</string>
             <string>GraviolaSoft-Medium</string>
             <string>GraviolaSoft-Medium</string>
         </mutableArray>
@@ -37,23 +37,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="8PA-GD-29w">
-                                <rect key="frame" x="20" y="80" width="560" height="463"/>
+                                <rect key="frame" x="20" y="72" width="560" height="471"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Plp-H0-Ewr">
-                                        <rect key="frame" x="225" y="0.0" width="111" height="21"/>
+                                        <rect key="frame" x="224" y="0.0" width="111" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="AO5-gt-1F5"/>
                                             <constraint firstAttribute="width" constant="111" id="GiA-DY-44M"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Graviola-Regular" family="Graviola" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="GraviolaSoft-Medium" family="Graviola Soft" pointSize="13"/>
                                         <color key="textColor" red="0.13346317410469055" green="0.18231484293937683" blue="0.25190103054046631" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="325" translatesAutoresizingMaskIntoConstraints="NO" id="5kk-WY-5Hh">
-                                        <rect key="frame" x="0.0" y="26" width="560" height="325"/>
+                                        <rect key="frame" x="0.0" y="26" width="560" height="333"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ug1-6d-wNA">
-                                        <rect key="frame" x="236" y="356" width="88" height="21"/>
+                                        <rect key="frame" x="236" y="364" width="88" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="bEL-ds-6vS"/>
                                             <constraint firstAttribute="width" constant="88" id="dwx-bI-h0o"/>
@@ -63,7 +63,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xzc-UZ-PfW">
-                                        <rect key="frame" x="266" y="382" width="29" height="81"/>
+                                        <rect key="frame" x="265" y="390" width="29" height="81"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="81" id="TJO-Ag-bnt"/>
                                         </constraints>
@@ -77,10 +77,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="8PA-GD-29w" firstAttribute="trailing" secondItem="eh4-2X-JE1" secondAttribute="trailingMargin" id="D2b-jY-bRi"/>
+                            <constraint firstItem="8PA-GD-29w" firstAttribute="top" secondItem="ziK-h8-Pj6" secondAttribute="bottom" constant="8" id="HfL-HV-Vvx"/>
                             <constraint firstItem="2Ha-1L-ALn" firstAttribute="top" secondItem="8PA-GD-29w" secondAttribute="bottom" constant="8" id="ZAf-dd-9eZ"/>
                             <constraint firstItem="8PA-GD-29w" firstAttribute="top" secondItem="ziK-h8-Pj6" secondAttribute="bottom" constant="16" id="h07-4p-yFE"/>
                             <constraint firstItem="8PA-GD-29w" firstAttribute="leading" secondItem="eh4-2X-JE1" secondAttribute="leadingMargin" id="pQz-PX-Ks2"/>
+                            <constraint firstItem="2Ha-1L-ALn" firstAttribute="top" secondItem="8PA-GD-29w" secondAttribute="bottom" constant="8" id="uyC-7n-vbR"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="h07-4p-yFE"/>
+                                <exclude reference="ZAf-dd-9eZ"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="SaI-Zb-8SG">
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="dxS-Cb-0VM"/>
@@ -195,23 +203,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="XP7-uL-2o9">
-                                <rect key="frame" x="20" y="80" width="560" height="468"/>
+                                <rect key="frame" x="20" y="72" width="560" height="476"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zuS-zr-vhf">
-                                        <rect key="frame" x="225" y="0.0" width="111" height="21"/>
+                                        <rect key="frame" x="224" y="0.0" width="111" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="111" id="gwd-rW-cm4"/>
                                             <constraint firstAttribute="height" constant="21" id="jNf-B0-7xd"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Graviola-Regular" family="Graviola" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="GraviolaSoft-Medium" family="Graviola Soft" pointSize="13"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="325" translatesAutoresizingMaskIntoConstraints="NO" id="Cl5-vM-Ygh">
-                                        <rect key="frame" x="0.0" y="26" width="560" height="330"/>
+                                        <rect key="frame" x="0.0" y="26" width="560" height="338"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zag-Qa-nLn">
-                                        <rect key="frame" x="236" y="361" width="88" height="21"/>
+                                        <rect key="frame" x="236" y="369" width="88" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="HdV-sY-eaB"/>
                                             <constraint firstAttribute="width" constant="88" id="X45-yU-LbD"/>
@@ -221,7 +229,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X86-xJ-GIh">
-                                        <rect key="frame" x="266" y="387" width="29" height="81"/>
+                                        <rect key="frame" x="265" y="395" width="29" height="81"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="81" id="GmS-UE-yoj"/>
                                         </constraints>
@@ -234,11 +242,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="VvB-75-bfu" firstAttribute="top" secondItem="XP7-uL-2o9" secondAttribute="bottom" constant="8" id="7eh-8k-hDt"/>
                             <constraint firstItem="VvB-75-bfu" firstAttribute="top" secondItem="XP7-uL-2o9" secondAttribute="bottom" constant="8" id="Qfl-lB-ivG"/>
                             <constraint firstItem="XP7-uL-2o9" firstAttribute="trailing" secondItem="ufH-AR-XNA" secondAttribute="trailingMargin" id="Rfb-OS-uZW"/>
                             <constraint firstItem="XP7-uL-2o9" firstAttribute="top" secondItem="SD9-hI-h4c" secondAttribute="bottom" constant="16" id="S7Z-bm-2TM"/>
+                            <constraint firstItem="XP7-uL-2o9" firstAttribute="top" secondItem="SD9-hI-h4c" secondAttribute="bottom" constant="8" id="UU9-Xf-Lfd"/>
                             <constraint firstItem="XP7-uL-2o9" firstAttribute="leading" secondItem="ufH-AR-XNA" secondAttribute="leadingMargin" id="kFF-gc-NFR"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="S7Z-bm-2TM"/>
+                                <exclude reference="Qfl-lB-ivG"/>
+                            </mask>
+                        </variation>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="5SJ-x8-xBv">
